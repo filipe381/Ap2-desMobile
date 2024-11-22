@@ -2,7 +2,7 @@ package com.example.ap2
 
 object listaPerguntas {
 
-    val nomeUsuario = "nome"
+    var nomeUsuario = "nome"
     var resultado = 0
 
     val perguntas = listOf(

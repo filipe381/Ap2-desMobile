@@ -16,7 +16,7 @@ class finalActivity : AppCompatActivity() {
         // Recuperando o resultado enviado pela quizActivity (a soma final)
         val resultadoFinal = intent.getIntExtra("resultadoFinal", 0) // Recupera o resultado como um inteiro
         // Recuperando o nome do usuário (exemplo)
-        val nomeUsuario = intent.getStringExtra("nomeUsuario") ?: "Usuário" // Usa "Usuário" como padrão, caso não tenha sido enviado
+        val nomeUsuario = listaPerguntas.nomeUsuario // Usa "Usuário" como padrão, caso não tenha sido enviado
 
         // Determinando a classificação do resultado de forma mais pessoal
         val resultadoTexto = when {

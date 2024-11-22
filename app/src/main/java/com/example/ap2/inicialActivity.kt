@@ -36,7 +36,7 @@ class inicialActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Bem Vindo, $userInput!", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this,quizActivity::class.java)
-                intent.putExtra(listaPerguntas.nomeUsuario, editText.text.toString())
+                listaPerguntas.nomeUsuario = editText.text.toString()
                 startActivity(intent)
                 finish()
             }
